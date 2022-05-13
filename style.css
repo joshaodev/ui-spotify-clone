@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+/* Import Fonts */
+@font-face {
+    font-family:  TypeIcon;
+    src: url("./fonts/type_icon.otf");
+}
+
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+/* Utility Classes */
+.logo {
+    width: auto;
+    height: 40px;
+}
+
+.btn-primary {
+    background: #1db954;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 15px 60px;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    transition: all 300ms ease;  /* Transição do btn-primary para o hover */
+}
+
+.btn-primary:hover {
+    background: #1ed760;
+    cursor: pointer;
+}
+
+/* Navbar */
+#navbar {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    width: 100vw;
+}
+
+#navbar .navbar-container {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    color: white;
+}
+
+#navbar .navbar-container .navbar-items {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+#navbar .navbar-container .navbar-items .navbar-item {
+    font-size: 0.9rem;
+    transition: all 300ms ease; /* Transição do navbar-item normal para o hover */
+}
+
+#navbar .navbar-container .navbar-items .navbar-item:hover {
+    color: #1db954;
+    cursor: pointer;
+}
+
+/* Showcase */
+#showcase {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: url("./img/showcase.webp") center center/cover;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: color;
+}
+
+#showcase .showcase-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#showcase .showcase-container h2 {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+#showcase .showcase-container p {
+    margin: 15px 0;
+    font-size: 1.1rem;
+}
+
+/* Footer */
+#footer {
+    width: 100vw;
+    background: #000000;
+    color: white;
+    
+    display: flex;
+    justify-content: center;
+}
+
+#footer .footer-container{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0 20px 0;
+}
+
+#footer .footer-container .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 100px;
+}
+
+#footer .footer-container .footer-content .footer-menu {
+    list-style: none;
+    padding-top: 20px;
+}
+
+#footer .footer-container .footer-content .footer-menu p{
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    color: gray;
+}
+
+#footer .footer-container .footer-content .footer-menu .footer-menu-item{
+    font-size: 0.8rem;
+    margin-top: 15px;
+    transition: all 300ms ease;
+}
+
+#footer .footer-container .footer-content .footer-menu .footer-menu-item:hover{
+    color: #1db954;
+    cursor: pointer;
+}
+
+.socials {
+    font-family: "TypeIcon";
+    font-size: 1.5rem;
+    padding-top: 20px;
+}
+
+.socials span {
+    margin-left: 5px;
+    transition: all 300ms ease;
+}
+
+.socials span:hover {
+    color: #1db954;
+    cursor: pointer;
+}
+
+#footer .footer-container .footer-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: gray;
+}
+
+#footer .footer-container .footer-info .footer-info-items {
+    list-style: none;
+    display: flex;
+    align-items: flex-end;
+}
+
+#footer .footer-container .footer-info .footer-info-items .footer-info-item {
+    margin-right: 25px;
+    transition: all 300ms ease;
+}
+
+#footer .footer-container .footer-info .footer-info-items .footer-info-item:hover {
+    color: #1db954;
+    cursor: pointer;
+}
+
+#footer .footer-container .footer-info .rights {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#footer .footer-container .footer-info .rights .country {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 5px;
+}
+
+#footer .footer-container .footer-info .rights .country p {
+    transition: all 300ms ease;
+}
+
+#footer .footer-container .footer-info .rights .country p:hover {
+    color: #1db954;
+    cursor: pointer;ase;
+}
+
+.angola-flag {
+    width: 30px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+
+
